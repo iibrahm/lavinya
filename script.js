@@ -91,7 +91,7 @@ function initLiveStatusTracker() {
           liveHeader.style.color = '#34D399';
         }
         if (heroLiveStatusVal) heroLiveStatusVal.textContent = 'Şu an Açık (09:00 - 19:00)';
-        if (heroLiveStatusSub) heroLiveStatusSub.textContent = closingHint + ' • Akyaka Park Zemin Kat No: 7/332';
+        if (heroLiveStatusSub) heroLiveStatusSub.textContent = closingHint + ' • Akyaka Park Yemek Katı No: 7/332';
       } else {
         const isBeforeOpen = currentTotalMinutes < openTime;
         const msg = isBeforeOpen ? 'Kapalı • 09:00\'da Açılacak' : 'Mesai Bitti • Kapalı';
@@ -381,7 +381,7 @@ function showToast(message) {
 }
 
 window.copyPharmacyAddress = function() {
-  const addressText = "İnkılap Mahallesi, Dr. Adnan Büyükdeniz Caddesi, No: 7/332 (Akyaka Park AVM Zemin / Çarşı Katı), Posta Kodu: 34768, Ümraniye / İstanbul";
+  const addressText = "İnkılap Mahallesi, Dr. Adnan Büyükdeniz Caddesi, No: 7/332 (Akyaka Park AVM Yemek Katı), Posta Kodu: 34768, Ümraniye / İstanbul";
   navigator.clipboard.writeText(addressText).then(() => {
     const btnText = document.getElementById('copyAddrBtnText');
     if (btnText) btnText.textContent = 'Kopyalandı!';
